@@ -1,0 +1,132 @@
+body {
+    margin: 0;
+    background-image:url(" https://img.freepik.com/vetores-gratis/fundo-hexagonal-gradiente_23-2148953143.jpg?w=740&t=st=1675798420~exp=1675799020~hmac=db3d4f9d5415bd67d82cc965bcfff41b2c1020bd5b5ed96512202cfdd54b77f5");
+	background-size:100%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #d0cfcf;
+}
+
+.container {
+    position: relative;
+    width: 320px;
+    margin: 100px auto 0 auto;
+    perspective: 900px;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+
+
+.carrossel {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    animation: rotate360 30s infinite forwards linear;
+}
+
+.imagem {
+    position: absolute;
+    width: 290px;
+    height: 187px;
+    top: 40px;
+    left: 10px;
+    right: 10px;
+    background-size: cover;
+    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.2);
+    display: flex;
+	
+	
+}
+
+h1{
+	font-size:60px;
+	padding:20px;
+	display:flex;
+	justify-content:center;
+	align-items:center; 
+    background:linear-gradient(to right, rgb(255, 255, 255) 10%, rgb(255, 255, 255) 50%, rgb(47, 87, 163) 90%) ;
+    background-size: 10% auto;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animate2 20s linear infinite;
+
+}
+@keyframes animate2{
+to{
+    background-position:200%;
+    
+}
+}
+
+
+.imagem span {
+    margin: auto;
+    font-size: 1em;
+}
+
+@keyframes rotate360 {
+    from {
+        transform: rotateY(0deg);
+    }
+
+    to {
+        transform: rotateY(-360deg);
+    }
+}
+
+.imagem:nth-child(1) {
+    background-image: url("https://st5.depositphotos.com/27209332/63406/i/600/depositphotos_634060114-stock-photo-paranaque-may-honda-civic-city.jpg");
+    transform: rotateY(0deg) translateZ(430px);
+}
+
+.imagem:nth-child(2) {
+    background-image: url("https://images.pexels.com/photos/15394302/pexels-photo-15394302.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    transform: rotateY(40deg) translateZ(430px);
+}
+
+.imagem:nth-child(3) {
+    background-image: url("https://images.pexels.com/photos/15296580/pexels-photo-15296580.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    transform: rotateY(80deg) translateZ(430px);
+}
+
+.imagem:nth-child(4) {
+    background-image: url("https://st3.depositphotos.com/3301647/12705/i/600/depositphotos_127052120-stock-photo-paris-france-september-29-2016.jpg");
+    transform: rotateY(120deg) translateZ(430px);
+}
+
+.imagem:nth-child(5) {
+    background-image: url("https://st4.depositphotos.com/11618586/27779/i/450/depositphotos_277791610-stock-photo-novosibirsk-russia-june-2019-honda.jpg");
+    transform: rotateY(160deg) translateZ(430px);
+}
+
+.imagem:nth-child(6) {
+    background-image: url("https://st3.depositphotos.com/6664102/17940/i/600/depositphotos_179402648-stock-photo-honda-civic-type-r-2017.jpg");
+    transform: rotateY(200deg) translateZ(430px);
+}
+
+.imagem:nth-child(7) {
+    background-image: url("https://images.pexels.com/photos/9827705/pexels-photo-9827705.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    transform: rotateY(240deg) translateZ(430px);
+}
+
+.imagem:nth-child(8) {
+    background-image: url("https://st.depositphotos.com/67903508/57673/i/600/depositphotos_576733416-stock-photo-chascomus-argentina-apr-2022-blued.jpg");
+    transform: rotateY(280deg) translateZ(430px);
+}
+
+.imagem:nth-child(9) {
+    background-image: url("https://images.pexels.com/photos/12658303/pexels-photo-12658303.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    transform: rotateY(320deg) translateZ(430px);
+}
+
+footer {
+    background-color: #000000;
+    text-align: center;
+    font-size: larger;
+    font-family: Tahoma, sans-serif;
+    color: white;
+    margin-top: 500PX;
+    
+}
